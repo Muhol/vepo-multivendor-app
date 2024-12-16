@@ -1,0 +1,121 @@
+{
+  "expo": {
+    "name": "Vepo Multivendor",
+    "scheme": "vepomultivendor",
+    "version": "1.0.37",
+    "description": "Vepo is a starter kit food ordering app built in React Native using Expo for IOS and Android. It's made keeping good aesthetics in mind as well keeping the best coding practices in mind. Its fully customisable to easily help you in your next food delivery project. https://market.nativebase.io/view/react-native-food-delivery-backend-app",
+    "slug": "Vepo-Multivendor",
+    "entryPoint": "./index.js",
+    "privacy": "public",
+    "androidStatusBar": {
+      "backgroundColor": "#000"
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#6FCF97"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "newArchEnabled": true,
+      "bundleIdentifier": "com.vepo.multivendor",
+      "config": {
+        "googleMapsApiKey": "AIzaSyCzNP5qQql2a5y8lOoO-1yj1lj_tzjVImA"
+      },
+      "usesAppleSignIn": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Allow $(PRODUCT_NAME) to use location to determine the delivery address for your orders.",
+        "UIBackgroundModes": [
+          "remote-notification"
+        ],
+        "NSUserTrackingUsageDescription": "Allow this app to collect app-related data that can be used for tracking you or your device."
+      }
+    },
+    "notification": {
+      "iosDisplayInForeground": true,
+      "color": "#6FCF97",
+      "icon": "./assets/not-icon.png",
+      "androidMode": "default",
+      "androidCollapsedTitle": "Vepo Multivendor"
+    },
+    "android": {
+      "versionCode": 37,
+      "newArchEnabled": true,
+      "package": "com.vepo.multivendor",
+      "googleServicesFile": "./google-services.json",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCzNP5qQql2a5y8lOoO-1yj1lj_tzjVImA"
+        }
+      },
+      "permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.FOREGROUND_SERVICE",
+        "com.google.android.gms.permission.AD_ID"
+      ]
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "vepo",
+            "project": "vepo-multivendor-app"
+          }
+        }
+      ]
+    },
+    "plugins": [
+      [
+        "expo-tracking-transparency",
+        {
+          "userTrackingPermission": "Allow this app to collect app-related data that can be used for tracking you or your device."
+        }
+      ],
+      [
+        "expo-updates",
+        {
+          "username": "mohol"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $Vepo Multivendor to use your location."
+        }
+      ],
+      "sentry-expo",
+      "expo-font",
+      "expo-localization"
+    ],
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/331d4e5b-b12a-434a-92ec-d6d283dc0e46"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "85206237-f307-4b36-b354-a7aa7fcf5fd8"
+      }
+    },
+    "owner": "mohol"
+  }
+}
