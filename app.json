@@ -27,7 +27,7 @@
     "ios": {
       "supportsTablet": true,
       "newArchEnabled": true,
-      "bundleIdentifier": "com.vepo.multivendor",
+      "bundleIdentifier": "com.enatega.multivendor",
       "config": {
         "googleMapsApiKey": "AIzaSyCzNP5qQql2a5y8lOoO-1yj1lj_tzjVImA"
       },
@@ -50,7 +50,7 @@
     "android": {
       "versionCode": 37,
       "newArchEnabled": true,
-      "package": "com.vepo.multivendor",
+      "package": "com.enatega.multivendor",
       "googleServicesFile": "./google-services.json",
       "config": {
         "googleMaps": {
@@ -70,8 +70,8 @@
         {
           "file": "sentry-expo/upload-sourcemaps",
           "config": {
-            "organization": "vepo",
-            "project": "vepo-multivendor-app"
+            "organization": "enatega",
+            "project": "enatega-multivendor-app"
           }
         }
       ]
@@ -113,7 +113,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "85206237-f307-4b36-b354-a7aa7fcf5fd8"
+        "projectId": "81c3804f-4aec-4306-acb1-b606117b52f4"
       }
     },
     "owner": "mohol"

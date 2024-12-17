@@ -361,19 +361,19 @@ function Main(props) {
     <>
       <SafeAreaView
         edges={['bottom', 'left', 'right']}
-        // style={[styles().flex, { backgroundColor: 'black' }]}
+        style={[styles().flex, { backgroundColor: 'black' }]}
         >
         <View 
-          // style={[styles().flex, styles(currentTheme).screenBackground]}
+          style={[styles().flex, styles(currentTheme).screenBackground]}
         >
           <View 
-          // style={styles().flex}
+          style={styles().flex}
           >
             <View 
-            // style={styles().mainContentContainer}
+            style={styles().mainContentContainer}
             >
               <View 
-              // style={[styles().flex, styles().subContainer]}
+              style={[styles().flex, styles().subContainer]}
               >
                 <Animated.FlatList
                   contentInset={{ top: containerPaddingTop }}

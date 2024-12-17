@@ -205,11 +205,11 @@ export default function App() {
     return (
       <ApolloProvider client={client}>
         <ThemeContext.Provider
-          // value={{ ThemeValue: theme, dispatch: themeSetter }}
+          value={{ ThemeValue: theme, dispatch: themeSetter }}
         >
           <StatusBar
-            // backgroundColor={Theme[theme].menuBar}
-            // barStyle={theme === 'Dark' ? 'light-content' : 'dark-content'}
+            backgroundColor={Theme[theme].menuBar}
+            barStyle={theme === 'Dark' ? 'light-content' : 'dark-content'}
           />
           <LocationContext.Provider value={{ location, setLocation }}>
             <ConfigurationProvider>
