@@ -307,7 +307,7 @@ export const en = {
   addOtherAmount: 'Add Other amount',
   otpResentToEmail: 'OTP resent to your email.',
   search: 'Search',
-  searchRestaurant: 'Search for restaurants',
+  searchVendor: 'Search for nearby Refills / Water vendors',
   message: 'Message',
   aptFloor: 'Apt | Floor',
   confirmPassword: 'Confirm Password',

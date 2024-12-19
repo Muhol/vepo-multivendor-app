@@ -139,7 +139,7 @@ function NoDrawer() {
       <NavigationStack.Screen
         name="ForgotPassword"
         component={ForgotPassword}
-      />
+      /> 
       <NavigationStack.Screen
         name="SetYourPassword"
         component={SetYourPassword}
@@ -201,7 +201,7 @@ function AppContainer() {
   useEffect(() => {
     if (
       lastNotificationResponse &&
-      lastNotificationResponse.notification.request.content.data.type ===
+      lastNotificationResponse.notification.request.content.data?.type ===
         'order' &&
       lastNotificationResponse.actionIdentifier ===
         Notifications.DEFAULT_ACTION_IDENTIFIER

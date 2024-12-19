@@ -759,7 +759,7 @@ function Cart(props) {
                         style={styles(currentTheme).cartInnerContainer}>
                         <TextDefault bold textColor={'white'} center>
                           {t('change')}
-                        </TextDefault>
+                        </TextDefault> 
                       </TouchableOpacity>
                     </View>
                   </View>

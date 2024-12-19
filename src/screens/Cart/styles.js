@@ -242,7 +242,7 @@ const styles = (props = null) =>
     cartInnerContainer: {
       marginTop: 4,
       padding: 6,
-      backgroundColor: props != null ? props.black : '#B8B8B8',
+      backgroundColor: props != null ? props.gold : '#B8B8B8',
       width: '50%',
       borderRadius: 6
     },

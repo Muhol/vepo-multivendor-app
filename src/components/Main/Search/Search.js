@@ -26,7 +26,7 @@ function Search(props) {
             <View style={styles().inputContainer}>
               <TextInput
                 style={styles(currentTheme).bodyStyleOne}
-                placeholder={t('searchRestaurant')}
+                placeholder={t('searchVendor')}
                 placeholderTextColor={currentTheme.fontSecondColor}
                 onChangeText={text => props.setSearch(text)}
                 value={props.search}
